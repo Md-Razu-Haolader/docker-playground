@@ -59,6 +59,18 @@ docker start container-name
 docker stop container-name
 ```
 
+### To inspect a container:\*\*
+
+```bash
+$ docker inspect <container-id>
+```
+
+### To view Docker logs in a Docker container:\*\*
+
+```bash
+$ docker logs <container-id>
+```
+
 ### To remove a container
 
 ```bash
