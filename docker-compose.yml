@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+    api:
+        build: .
+        # dockerfile: Dockerfile
+        image: razucse129/docker-playground:0.1
+        container_name: docker-play-con
+        ports:
+            - "8087:8087" # host-port:container port for running the container
+        volumes:
+            - .:/app # source path:container path
+            - /app/node_modules # don't override node_module inside the container
+        command:
+            - yarn
+            - start
