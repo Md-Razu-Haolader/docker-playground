@@ -6,7 +6,7 @@ here . means the source path of local directory (here, current directory). so al
 specifies where to find the files for the “context” of the build on the Docker daemon.
 
 ```bash
-docker build —tag image-name:tag .
+docker build —tag image-name:tag-name .
 ```
 
 ### To check Docker images
